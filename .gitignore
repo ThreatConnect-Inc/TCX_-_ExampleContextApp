@@ -1,0 +1,34 @@
+# App Build
+
+TCX_-_*
+
+# Project ignore
+
+app/.baseDir.ts
+docs
+.tscache
+
+# Node generated files
+
+node_modules
+npm-debug.log
+
+# OS generated files
+
+Thumbs.db
+.DS_Store
+
+# Ignored files
+# *.js
+*.map
+*.d.ts
+
+# IDE ignore
+
+.c9
+.python-version
+
+# Other Nonsense
+
+00__*
+bcs*

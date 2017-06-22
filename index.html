@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <script>
+        document.write('<base href="' + document.location + '" />');
+    </script>
+    <title>Sample App</title>
+
+    <!-- TC Theme
+    -->
+    <link rel="stylesheet" type="text/css" href="app/resources/icons/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="scripts/primeui/primeui-ng-all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="app/resources/css/app.css"/>
+
+    <link rel="stylesheet" type="text/css" href="app/resources/css/spaces.css"/>
+
+    <script src="scripts/libs.js"></script>
+    <!-- PrimeNG doesn't like to be run through Browserify for some reason -->
+    <script src="scripts/primeui/primeui-ng-all.min.js"></script>
+    <!-- X2JS thinks it's in a Node environment when puleed in with Grunt,
+         so we have to pull it in the old-fashioned way -->
+    <script src="scripts/x2js/x2js.js"></script>
+
+</head>
+
+<body class="tc">
+    <tc-spaces-app>
+        <img src="app/resources/images/ajax-loader-spinner.gif" alt="Loading" class="loading-image">
+    </tc-spaces-app>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>

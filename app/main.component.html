@@ -1,0 +1,21 @@
+<div class="spaces-item">
+<p-tabView (onChange)="tabChange($event)">
+    <p-tabPanel header="Parameters">
+        <parameters-component [paramsData]="paramsData"></parameters-component>
+    </p-tabPanel>
+    <p-tabPanel header="Data Store" *ngIf="showTab.settings">
+        <settings-component></settings-component>
+    </p-tabPanel>
+    <p-tabPanel header="Resource Data" *ngIf="showTab.resource">
+        <resource-component></resource-component>
+    </p-tabPanel>
+    <p-tabPanel header="Owners" *ngIf="showTab.owners">
+        <owners-component></owners-component>
+    </p-tabPanel>
+</p-tabView>
+</div>
+<div class="spaces-item">
+    <button pButton type="button" (click)="goTo('associations')" label="Route To -> Associations"></button>
+    <button pButton type="button" (click)="successMessage('Something worked')" label="Show Success Message"></button>
+    <button pButton type="button" (click)="errorMessage('Something failed')" label="Show Error Message"></button>
+</div>

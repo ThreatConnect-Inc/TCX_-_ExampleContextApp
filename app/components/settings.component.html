@@ -1,0 +1,8 @@
+<header>
+    Persistent JSON storage (Data Store) for apps.
+</header>
+<textarea rows="20" cols="40" [(ngModel)]="settings.savedSettings" pInputTextarea></textarea>
+<footer>
+    <button pButton class="btn tc-blue" type="button" label="Load" (click)="settings.load()"></button>
+    <button pButton class="btn tc-orange" type="button" label="Save" (click)="settings.save()"></button>
+</footer>
