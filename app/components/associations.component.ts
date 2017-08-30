@@ -20,13 +20,13 @@ import {
     SpacesBaseService,
     SpacesLoggingService
 }
-from 'spaces-ng/dist/main';
+from 'spaces-ng/';
 
 // import {
 //     TcGroupService,
 //     TcIndicatorService,
 // }
-// from 'threatconnect-ng/dist/main';
+// from 'threatconnect-ng/';
 
 @Component({
     templateUrl: './app/components/associations.component.html',

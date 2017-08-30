@@ -12,12 +12,12 @@ from 'primeng/primeng';
 import {
     SpacesLoggingService
 }
-from 'spaces-ng/dist/main';
+from 'spaces-ng/';
 
 import {
     TcIndicatorService
 }
-from 'threatconnect-ng/dist/main';
+from 'threatconnect-ng/';
 
 
 @Injectable()

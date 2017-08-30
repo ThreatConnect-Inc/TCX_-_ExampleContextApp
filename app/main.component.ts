@@ -37,7 +37,7 @@ import {
     SpacesMessagesService,
     SpacesStorageService
 }
-from 'spaces-ng/dist/main';
+from 'spaces-ng/';
 
 /*
 import {
@@ -46,7 +46,7 @@ import {
     TcIndicatorService,
     TcOwnerService
 }
-from 'threatconnect-ng/dist/main';
+from 'threatconnect-ng/';
 */
 
 import { OwnersComponent } from './components/owners.component';
