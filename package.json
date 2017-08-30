@@ -15,7 +15,7 @@
     "ngx-bowser": "^0.1.0",
     "primeng": "2.0.0",
     "primeui": "^4.1.15",
-    "threatconnect-ng": "git+https://github.com/ThreatConnect-Inc/threatconnect-ng.git#develop"
+    "threatconnect-ng": "git+https://github.com/ThreatConnect-Inc/threatconnect-ng.git"
   },
   "devDependencies": {
     "@angular/common": "2.4.5",
