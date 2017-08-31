@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import {
     SpacesLoggingService,
     SpacesMessagesService
-} from 'spaces-ng/dist/main';
-import { TcExchangeDbService } from 'threatconnect-ng/dist/main';
+} from 'spaces-ng/';
+import { TcExchangeDbService } from 'threatconnect-ng/';
 
 
 @Injectable()

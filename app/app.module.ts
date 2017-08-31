@@ -49,7 +49,7 @@ import {
     SpacesStorageService,
     SpacesUtilityService
 }
-from 'spaces-ng/dist/main';
+from 'spaces-ng/';
 import {
     // Address,
     // EmailAddress,
@@ -59,7 +59,7 @@ import {
     TcIndicatorService,
     TcOwnerService
     // Url
-} from 'threatconnect-ng/dist/main';
+} from 'threatconnect-ng/';
 import { SettingsService } from './services/settings.service';
 
 @NgModule({
