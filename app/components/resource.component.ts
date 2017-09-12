@@ -6,12 +6,12 @@ from '@angular/core';
 import {
     SpacesLoggingService,
     SpacesMessagesService
-} from 'spaces-ng/';
+} from 'spaces-ng';
 import {
     TcGroupService,
     TcIndicatorService,
 }
-from 'threatconnect-ng/';
+from 'threatconnect-ng';
 
 @Component({
     templateUrl: './app/components/resource.component.html',

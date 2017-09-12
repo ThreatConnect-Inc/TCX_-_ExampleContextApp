@@ -20,7 +20,7 @@ import {
     SpacesBaseService,
     SpacesLoggingService
 }
-from 'spaces-ng/';
+from 'SpacesModule';
 
 // import {
 //     TcGroupService,

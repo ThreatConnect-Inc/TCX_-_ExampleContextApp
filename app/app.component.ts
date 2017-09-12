@@ -11,7 +11,7 @@ import {
     SpacesMessagesService,
     SpacesStorageService
 }
-from 'spaces-ng/';
+from 'spaces-ng';
 
 @Component({
     templateUrl: 'app/app.component.html',

@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/primeng/resources/themes/_theme.scss";
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
+@import "../node_modules/primeui/primeui-ng-all.min.css";
+@import "../node_modules/roboto-fontface/css/roboto/roboto-fontface.css";
+@import "../node_modules/roboto-fontface/css/roboto-condensed/roboto-condensed-fontface.css";
+@import "../node_modules/roboto-fontface/css/roboto-slab/roboto-slab-fontface.css";
+
+@import "app/resources/css/app.css";
+@import "app/resources/css/spaces.css";

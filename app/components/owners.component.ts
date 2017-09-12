@@ -6,8 +6,8 @@ from '@angular/core';
 import {
     SpacesLoggingService,
     SpacesMessagesService
-} from 'spaces-ng/';
-import { TcOwnerService, } from 'threatconnect-ng/';
+} from 'spaces-ng';
+import { TcOwnerService, } from 'threatconnect-ng';
 
 @Component({
     templateUrl: './app/components/owners.component.html',

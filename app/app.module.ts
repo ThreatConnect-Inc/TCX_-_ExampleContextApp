@@ -42,24 +42,13 @@ import { SidebarComponent } from './components/sidebar.component';
 /* Services */
 
 import {
-    SpacesBaseService,
-    SpacesLoggingService,
-    SpacesMessagesService,
-    SpacesRequestService,
-    SpacesStorageService,
-    SpacesUtilityService
+    SpacesModule
 }
-from 'spaces-ng/';
+from 'spaces-ng';
 import {
-    // Address,
-    // EmailAddress,
-    // Host,
-    TcExchangeDbService,
-    TcGroupService,
-    TcIndicatorService,
-    TcOwnerService
-    // Url
-} from 'threatconnect-ng/';
+    TcModule
+} from 'threatconnect-ng';
+
 import { SettingsService } from './services/settings.service';
 
 @NgModule({
@@ -82,7 +71,9 @@ import { SettingsService } from './services/settings.service';
         PanelModule,
         SharedModule,
         StepsModule,
-        TabViewModule
+        TabViewModule,
+        TcModule,
+        SpacesModule,
     ],
     declarations: [
         AppComponent,
@@ -99,16 +90,6 @@ import { SettingsService } from './services/settings.service';
         BowserService,
         /* TC Service */
         SettingsService,
-        SpacesBaseService,
-        SpacesLoggingService,
-        SpacesMessagesService,
-        SpacesRequestService,
-        SpacesStorageService,
-        SpacesUtilityService,
-        TcExchangeDbService,
-        TcGroupService,
-        TcIndicatorService,
-        TcOwnerService
     ],
     bootstrap: [AppComponent]
 })

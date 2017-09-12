@@ -1,34 +1,43 @@
-# App Build
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-TCX_-_*
+# compiled output
+/dist
+/tmp
+/out-tsc
 
-# Project ignore
+# dependencies
+/node_modules
 
-app/.baseDir.ts
-docs
-.tscache
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
-# Node generated files
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
-node_modules
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
 npm-debug.log
+testem.log
+/typings
+yarn-error.log
 
-# OS generated files
+# e2e
+/e2e/*.js
+/e2e/*.map
 
-Thumbs.db
+# System Files
 .DS_Store
-
-# Ignored files
-# *.js
-*.map
-*.d.ts
-
-# IDE ignore
-
-.c9
-.python-version
-
-# Other Nonsense
-
-00__*
-bcs*
+Thumbs.db

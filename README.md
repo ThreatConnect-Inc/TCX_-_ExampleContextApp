@@ -1,39 +1,28 @@
-# TCX Example Context App
+# ContextApp
 
-This ThreatConnect&trade; Spaces Example Context App provides examples of a few features of the [spaces-ng](https://github.com/ThreatConnect-Inc/spaces-ng) and [threatconnect-ng](https://github.com/ThreatConnect-Inc/threatconnect-ng) modules as well as a basic layout for a context aware App.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.1.
 
-## Install App
-git clone https://github.com/ThreatConnect-Inc/TCX_-_ExampleContextApp.git
+## Development server
 
-## Build App
-npm install
-grunt build:dist
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Deploy
-In the ThreatConnect UI install the App zip created in the Build App section.
+## Code scaffolding
 
-## Sidebar
-The Sidebar is an optional feature that provides a simple layout for a vertical menu.  Currently the area provided for a Spaces app is limited so the sidebar provides a good option for a navigational menu for an App.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Tabs
-The Tabs section is an optional feature that uses [PrimeNG TabView](http://www.primefaces.org/primeng/#/tabview) to group relevant data.
+## Build
 
-## Parameters
-The Parameters tab provides a list of all parameters passed to a Spaces App.  Not all parameters will be required in all Apps.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Data Store
-The Data Store tab provides a example of persistent storage in a Spaces App.  The Data Store feature provided for Apps in the ThreatConnect Platform can be used to store settings, cached data or any other use for persistent data.
+## Running unit tests
 
-## Resource Data
-The Resource Data tab provides an example of interacting with the ThreatConnect API.  Depending on the context the Group, Indicator or Victim data will be displayed.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Owners
-The Owners tab will only be displayed when the working with Indicators.  This tab provides and example of an optional tab dependent on the Resource Type.  This tab will show all owner where the indicator is found.
+## Running end-to-end tests
 
-## App Settings
-The App has to inputs defined in the install.json.  These are just examples of how a user would provide input to an App, such as API Credentials to a remote service.
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
 
-# Release Notes
+## Further help
 
-## 1.0.0
-+ Initial Release
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
