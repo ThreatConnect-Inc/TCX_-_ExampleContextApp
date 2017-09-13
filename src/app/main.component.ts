@@ -37,7 +37,7 @@ import {
     SpacesMessagesService,
     SpacesStorageService
 }
-from 'spaces-ng/';
+from 'spaces-ng';
 
 /*
 import {
@@ -131,6 +131,7 @@ export class MainComponent implements OnInit {
                     });
                 }
             }
+            this.pc.paramsData = this.paramsData;
 
             /* load settings */
             this.settings.load();  // load setting from TC DataStore

@@ -1,4 +1,5 @@
-<p-dataTable [value]="paramsData">
+<p-dataTable *ngIf="paramsData.length > 0" [value]="paramsData">
     <p-column field="name" header="Name" [sortable]="true"></p-column>
     <p-column field="value" header="Value" [sortable]="true"></p-column>
 </p-dataTable>
+<p *ngIf="paramsData.length == 0">Parameters not loaded.</p>
