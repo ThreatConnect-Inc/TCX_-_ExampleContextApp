@@ -10,12 +10,12 @@ grunt.initConfig({
     main: {
       cwd: 'dist/',
       src: ['**', '!*.eot', '!*.svg', '!*.ttf', '!*.woff'],
-      dest: '<%= app.name %>_v<%= app.version %>/ui/',
+      dest: 'target/<%= app.name %>_v<%= app.version %>/ui/',
       expand: true
     },
     app: {
       src: 'install.json',
-      dest: '<%= app.name %>_v<%= app.version %>',
+      dest: 'target/<%= app.name %>_v<%= app.version %>',
       expand: true
     }
   },
@@ -23,9 +23,7 @@ grunt.initConfig({
   clean: {
     bundle: {
       src: [
-        '<%= app.name %>_v<%= app.version %>',
-        '<%= app.name %>_v<%= app.version %>.tcx',
-        '<%= app.name %>_v<%= app.version %>.tcx'
+        'target/'
       ],
       options: {
         expand: true
@@ -58,12 +56,12 @@ grunt.initConfig({
   compress: {
     main: {
       options: {
-        archive: '<%= app.name %>_v<%= app.version %>.tcx',
+        archive: 'target/<%= app.name %>_v<%= app.version %>.tcx',
         pretty: true,
         mode: 'zip'
       },
       expand: true,
-      cwd: '<%= app.name %>_v<%= app.version %>/',
+      cwd: 'target/<%= app.name %>_v<%= app.version %>/',
       src: ['**/*'],
       dest: '/<%= app.name %>_v<%= app.version %>/'
     }
