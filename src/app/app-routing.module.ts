@@ -6,32 +6,19 @@ import {
 from '@angular/router';
 import { MainComponent } from './main.component';
 import { AssociationsComponent } from './components/associations.component';
-import {SpacesBaseResolver} from "./services/SpacesBaseResolver";
 
 const routes: Routes = [{
         path: '',
-        component: MainComponent,
-        resolve: {
-          ready: SpacesBaseResolver
-        }
+        component: MainComponent
     }, {
         path: 'index.html',
-        component: MainComponent,
-        resolve: {
-          ready: SpacesBaseResolver
-        }
+        component: MainComponent
     }, {
         path: 'main',
-        component: MainComponent,
-        resolve: {
-          ready: SpacesBaseResolver
-        }
+        component: MainComponent
     }, {
         path: 'associations',
-        component: AssociationsComponent,
-        resolve: {
-          ready: SpacesBaseResolver
-        }
+        component: AssociationsComponent
     }];
 
 @NgModule({

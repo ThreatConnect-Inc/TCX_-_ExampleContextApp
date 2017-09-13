@@ -39,6 +39,7 @@ export class AppComponent implements OnInit {
                 this.spacesBase.init(params);
 
                 this.spacesBase.initialized.then(() => {
+                  console.log("AppComponent");
                     /* store app parameters */
                     this.storage.create('tcSelectedItem', this.spacesBase.param('tcSelectedItem'));
                     this.storage.create('tcType', this.spacesBase.param('tcType'));

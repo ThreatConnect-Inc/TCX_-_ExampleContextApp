@@ -113,7 +113,8 @@ export class MainComponent implements OnInit {
 
         // spacesBase promise (indicates query parameters have been stored)
         this.spacesBase.initialized.then(() => {
-            this.logging.info('this.spacesBase.params', this.spacesBase.params);
+          console.log("MainComponent");
+          this.logging.info('this.spacesBase.params', this.spacesBase.params);
 
             this.tcSelectedItem = this.storage.read('tcSelectedItem');
             this.tcType = this.storage.read('tcType');

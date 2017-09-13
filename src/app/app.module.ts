@@ -51,7 +51,6 @@ import {
 
 import { SettingsService } from './services/settings.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {SpacesBaseResolver} from './services/SpacesBaseResolver';
 
 @NgModule({
     imports: [
@@ -76,7 +75,7 @@ import {SpacesBaseResolver} from './services/SpacesBaseResolver';
         TabViewModule,
         TcModule,
         SpacesModule,
-      BrowserAnimationsModule
+        BrowserAnimationsModule
     ],
     declarations: [
         AppComponent,
@@ -92,8 +91,7 @@ import {SpacesBaseResolver} from './services/SpacesBaseResolver';
         /* Bowser Service */
         BowserService,
         /* TC Service */
-        SettingsService,
-        SpacesBaseResolver
+        SettingsService
     ],
     bootstrap: [AppComponent]
 })

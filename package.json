@@ -28,8 +28,8 @@
     "primeui": "^4.1.15",
     "roboto-fontface": "^0.8.0",
     "rxjs": "^5.4.2",
-    "spaces-ng": "0.3.1",
-    "threatconnect-ng": "0.2.0",
+    "spaces-ng": "git+https://github.com/ThreatConnect-Inc/spaces-ng.git#develop",
+    "threatconnect-ng": "git+https://github.com/ThreatConnect-Inc/threatconnect-ng.git#develop",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
@@ -40,6 +40,8 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "~3.1.1",
+    "grunt": "^1.0.1",
+    "grunt-cli": "1.2.0",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",
@@ -52,7 +54,6 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.3.2",
     "typescript": "~2.3.3",
-    "grunt-cli": "1.2.0",
-    "grunt": "^1.0.1"
+    "webpack": "^3.5.6"
   }
 }
