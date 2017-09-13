@@ -93,10 +93,12 @@ export class MainComponent implements OnInit {
         // private tcIndicator: TcIndicatorService,
         // private tcOwner: TcOwnerService
     ) {
-        this.logging.moduleColor('#FFFF00', '#000', 'MainComponent');  // set logging console colors
+      this.logging.moduleColor('#FFFF00', '#000', 'MainComponent');  // set logging console colors
 
-        this.logging.critical('this.logging.logLevel', this.logging.logLevel);
+      this.logging.critical('this.logging.logLevel', this.logging.logLevel);
+    }
 
+    ngOnInit() {
         // default tab visibility
         this.showTab = {
             'settings': true,
