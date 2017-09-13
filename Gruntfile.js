@@ -8,7 +8,7 @@ grunt.initConfig({
 
   copy: {
     main: {
-      cwd: 'dist/',
+      cwd: 'target/dist/',
       src: ['**', '!*.eot', '!*.svg', '!*.ttf', '!*.woff'],
       dest: 'target/<%= app.name %>_v<%= app.version %>/ui/',
       expand: true
@@ -28,18 +28,12 @@ grunt.initConfig({
       options: {
         expand: true
       }
-    },
-    build: {
-      src: ['dist'],
-      options: {
-        expand: true
-      }
     }
   },
 
   exec: {
-    buildProd: path.relative('', 'node_modules/.bin/ng build') +  ' --aot --prod --base-href .',
-    buildDev: path.relative('', 'node_modules/.bin/ng build') +  ' --aot',
+    buildProd: path.relative('', 'node_modules/.bin/ng build') +  ' --aot --prod --output-path target/dist --base-href .',
+    buildDev: path.relative('', 'node_modules/.bin/ng build') +  ' --aot --output-path target/dist',
     serve: path.relative('', 'node_modules/.bin/ng serve')
   },
 
@@ -82,7 +76,6 @@ grunt.registerTask(
     'exec:buildProd',
     'copy',
     'compress',
-    'clean:build'
   ]
 );
 
@@ -92,16 +85,6 @@ grunt.registerTask(
   [
     'clean',
     'exec:buildDev'
-  ]
-);
-
-grunt.registerTask(
-  'build:serve',
-  [
-    'copy',
-    'build',
-    'connect',
-    'watch'
   ]
 );
 
