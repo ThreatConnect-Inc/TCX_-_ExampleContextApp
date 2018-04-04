@@ -5,9 +5,13 @@ This ThreatConnect&trade; Spaces Example Context App provides examples of a few 
 ## Install App
 git clone https://github.com/ThreatConnect-Inc/TCX_-_ExampleContextApp.git
 
-## Build App
+## Build App For Release
 npm install
-grunt build:dist
+grunt buildProd
+
+## Build App in Development Mode (does not minify or uglify code, so it can be debugged in browser)
+npm install
+grunt buildDev
 
 ## Deploy
 In the ThreatConnect UI install the App zip created in the Build App section.

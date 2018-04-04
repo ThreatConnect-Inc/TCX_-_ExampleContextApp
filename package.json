@@ -1,77 +1,60 @@
 {
-  "author": {
-    "name": "ThreatConnect Inc"
+  "name": "context-udpate",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build --prod",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
-  "bugs": {
-    "url": "https://www.threatconnect.com/contact/"
-  },
-  "contributors": [
-    {
-      "email": "bsummers@threatconnect.com",
-      "name": "Bracey Summers"
-    }
-  ],
+  "private": true,
   "dependencies": {
-    "ngx-bowser": "^0.1.0",
-    "primeng": "2.0.0",
-    "primeui": "^4.1.15",
-    "threatconnect-ng": "git+https://github.com/ThreatConnect-Inc/threatconnect-ng.git"
+    "@angular/animations": "^5.2.0",
+    "@angular/common": "^5.2.0",
+    "@angular/compiler": "^5.2.0",
+    "@angular/core": "^5.2.0",
+    "@angular/forms": "^5.2.0",
+    "@angular/http": "^5.2.0",
+    "@angular/platform-browser": "^5.2.0",
+    "@angular/platform-browser-dynamic": "^5.2.0",
+    "@angular/router": "^5.2.0",
+    "core-js": "^2.4.1",
+    "font-awesome": "^4.7.0",
+    "primeng": "^5.2.4",
+    "rxjs": "^5.5.6",
+    "spaces-ng": "^5.0.2",
+    "threatconnect-ng": "^5.0.2",
+    "zone.js": "^0.8.19"
   },
   "devDependencies": {
-    "@angular/common": "2.4.5",
-    "@angular/compiler": "2.4.5",
-    "@angular/core": "2.4.5",
-    "@angular/forms": "2.4.5",
-    "@angular/http": "2.4.5",
-    "@angular/platform-browser": "2.4.5",
-    "@angular/platform-browser-dynamic": "2.4.5",
-    "@angular/router": "3.4.5",
-    "@angular/upgrade": "2.4.5",
-    "@types/core-js": "^0.9.41",
-    "codelyzer": "^2.0.0-beta.4",
-    "core-js": "^2.4.0",
+    "@angular/cli": "~1.7.3",
+    "@angular/compiler-cli": "^5.2.0",
+    "@angular/language-service": "^5.2.0",
+    "@types/jasmine": "~2.8.3",
+    "@types/jasminewd2": "~2.0.2",
+    "@types/node": "~6.0.60",
+    "codelyzer": "^4.0.1",
     "grunt": "^1.0.1",
-    "grunt-browserify": "^5.0.0",
-    "grunt-cli": "1.2.0",
-    "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-compress": "^1.4.1",
-    "grunt-contrib-connect": "^1.0.2",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-compress": "^1.4.3",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^1.0.0",
-    "grunt-contrib-less": "^1.3.0",
-    "grunt-contrib-uglify": "^2.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-include-replace": "^5.0.0",
-    "grunt-json-schema": "^1.1.0",
-    "grunt-ts": "^6.0.0-beta.16",
-    "grunt-tslint": "4.0.0",
-    "materialize-css": "^0.98.0",
-    "reflect-metadata": "^0.1.3",
-    "rxjs": "5.1.0",
-    "tslint": "4.4.2",
-    "typescript": "2.3.4",
-    "x2js": "^2.0.1",
-    "zone.js": "^0.7.2"
-  },
-  "description": "ThreatConnect Sample Spaces App",
-  "homepage": "https://github.com/ThreatConnect-Inc/TCX_-_SampleContextApp",
-  "keywords": [],
-  "license": "Apache-2.0",
-  "main": "main.js",
-  "maintainers": [
-    {
-      "email": "bsummers@threatconnect.com",
-      "name": "Bracey Summers"
-    }
-  ],
-  "name": "TCX_-_SampleContextApp",
-  "optionalDependencies": {},
-  "readme": "",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ThreatConnect-Inc/TCX_-_SampleContextApp.git"
-  },
-  "scripts": {},
-  "typings": "dist/main.d.ts",
-  "version": "0.1.0"
+    "grunt-exec": "^3.0.0",
+    "jasmine-core": "~2.8.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~2.0.0",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "^1.2.1",
+    "karma-jasmine": "~1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "materialize-css": "^0.100.2",
+    "ngx-bowser": "^0.1.0",
+    "protractor": "~5.1.2",
+    "ts-node": "~4.1.0",
+    "tslint": "~5.9.1",
+    "typescript": "~2.5.3"
+  }
 }
