@@ -81,21 +81,11 @@ export class MainComponent implements OnInit {
         this.spacesBase.initialized.then(() => {
             this.logging.info('this.spacesBase.params', this.spacesBase.params);
 
-            this.tcSelectedItem = this.storage.read('tcSelectedItem');
-            this.tcType = this.storage.read('tcType');
+            this.tcSelectedItem = this.spacesBase.param('tcSelectedItem');
+            this.tcType = this.spacesBase.param('tcType');
 
             this.logging.debug('this.tcSelectedItem', this.tcSelectedItem);
             this.logging.debug('this.tcType', this.tcType);
-
-            /* build param data */
-            for (let name in this.spacesBase.params) {
-                if (this.spacesBase.params.hasOwnProperty(name)) {
-                    this.paramsData.push({
-                        'name': name,
-                        'value': this.spacesBase.params[name]
-                    });
-                }
-            }
 
             /* load settings */
             this.settings.load();  // load setting from TC DataStore

@@ -1,4 +1,21 @@
-<p-dataTable [value]="paramsData">
-    <p-column field="name" header="Name" [sortable]="true"></p-column>
-    <p-column field="value" header="Value" [sortable]="true"></p-column>
-</p-dataTable>
+<p-table [value]="parameters">
+  <ng-template pTemplate="header">
+    <tr>
+      <th [pSortableColumn]="'name'">
+        Name
+        <p-sortIcon [field]="'name'"></p-sortIcon>
+      </th>
+      <th [pSortableColumn]="'value'">
+        Value
+        <p-sortIcon [field]="'value'"></p-sortIcon>
+      </th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-parameter>
+    <tr>
+      <td>{{ parameter.name }}</td>
+      <td>{{ parameter.value }}</td>
+
+    </tr>
+  </ng-template>
+</p-table>

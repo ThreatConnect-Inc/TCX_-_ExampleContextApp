@@ -15,6 +15,7 @@ import {
     BowserModule,
     BowserService
 } from 'ngx-bowser';
+
 import {
     AccordionModule,
     ButtonModule,
@@ -23,14 +24,13 @@ import {
     DropdownModule,
     GrowlModule,
     InputTextModule,
-    // MenuItem,
-    // Message,
     PanelModule,
     SharedModule,
     StepsModule,
     TabViewModule
-}
-from 'primeng/primeng';
+} from 'primeng/primeng';
+
+import { TableModule } from 'primeng/table';
 
 /* Components */
 import { AppComponent } from './app.component';
@@ -87,7 +87,8 @@ import { SettingsService } from './services/settings.service';
         PanelModule,
         SharedModule,
         StepsModule,
-        TabViewModule
+        TabViewModule,
+        TableModule
     ],
     declarations: [
         AppComponent,

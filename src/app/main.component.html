@@ -1,7 +1,7 @@
 <div class="spaces-item">
 <p-tabView (onChange)="tabChange($event)">
     <p-tabPanel header="Parameters">
-        <tc-context-parameters [paramsData]="paramsData"></tc-context-parameters>
+        <tc-context-parameters></tc-context-parameters>
     </p-tabPanel>
     <p-tabPanel header="Data Store" *ngIf="showTab.settings">
         <tc-context-settings></tc-context-settings>

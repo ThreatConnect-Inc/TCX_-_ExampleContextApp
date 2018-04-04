@@ -42,8 +42,8 @@ export class SettingsService {
                         JSON.stringify(this.savedSettings, null, 4));
                 },
                 err => {
-                    this.logging.error('Error', err);
-                    this.messages.showError('Failed', 'Loading Settings');
+                  this.init();
+                  this.logging.error('Error', err);
                 }
             );
     }
