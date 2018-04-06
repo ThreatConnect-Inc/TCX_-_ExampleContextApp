@@ -3,18 +3,29 @@
 This ThreatConnect&trade; Spaces Example Context App provides examples of a few features of the [spaces-ng](https://github.com/ThreatConnect-Inc/spaces-ng) and [threatconnect-ng](https://github.com/ThreatConnect-Inc/threatconnect-ng) modules as well as a basic layout for a context aware App.
 
 ## Install App
+
+```
 git clone https://github.com/ThreatConnect-Inc/TCX_-_ExampleContextApp.git
+```
 
 ## Build App For Release
+
+```
 npm install
 grunt buildProd
+```
+
+This will package the app as `target/TCX_-_Example_Context_App_v1.0.tcx`.
 
 ## Build App in Development Mode (does not minify or uglify code, so it can be debugged in browser)
+
+```
 npm install
 grunt buildDev
+```
 
 ## Deploy
-In the ThreatConnect UI install the App zip created in the Build App section.
+In the ThreatConnect UI install the App (the `.tcx` file) created in the [Build App for Release](#build-app-for-release) section.
 
 ## Sidebar
 The Sidebar is an optional feature that provides a simple layout for a vertical menu.  Currently the area provided for a Spaces app is limited so the sidebar provides a good option for a navigational menu for an App.
