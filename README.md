@@ -35,7 +35,7 @@ The Resource Data tab provides an example of interacting with the ThreatConnect 
 The Owners tab will only be displayed when the working with Indicators.  This tab provides and example of an optional tab dependent on the Resource Type.  This tab will show all owner where the indicator is found.
 
 ## App Settings
-The App has to inputs defined in the install.json.  These are just examples of how a user would provide input to an App, such as API Credentials to a remote service.
+The App has two inputs defined in the install.json.  These are just examples of how a user would provide input to an App, such as API Credentials to a remote service.
 
 # Release Notes
 
