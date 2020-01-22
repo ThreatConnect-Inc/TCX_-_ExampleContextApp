@@ -7,10 +7,12 @@ git clone https://github.com/ThreatConnect-Inc/TCX_-_ExampleContextApp.git
 
 ## Build App For Release
 npm install
+
 grunt buildProd
 
 ## Build App in Development Mode (does not minify or uglify code, so it can be debugged in browser)
 npm install
+
 grunt buildDev
 
 ## Deploy
