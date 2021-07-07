@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('context-udpate App', () => {
+describe('context-update App', () => {
   let page: AppPage;
 
   beforeEach(() => {
